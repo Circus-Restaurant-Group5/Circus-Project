@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Css Style Sheet-->
+    <link rel ="stylesheet" href="style.css">
+    <!--Javascript File--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="menu.js"></script>
+    <!--font awsome link--->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Menu Order Page</title>
+</head>
+<body>
+
+    <div class="foodmenu">
+        <div class="banner">
+            <!--Page Banner Image-->
+            <img src="banner.jpg">
+              <div class="promo">
+                  <h1><span>Opening Disocunt </span> <br>10% off on Online Order and Take Away</h1>
+              </div>
+        </div>
+           <!--Search Menu-->
+             <input type="search" id="searchMenu" class="searchMenu" placeholder="SearchMenu">
+        <div class ="menuheader">
+            <a href ="#">Favorites</a>
+            <a href ="#">Bestseller</a>
+            <a href ="#">Promotion</a>
+            <a href ="#">All</a>
+        </div>
+        <!--Pizza dishes -->
+        <div class="searchcart">
+            <h2 class="foodcatheading"><span>PIZZA</span></h2> 
+            <div class="menu-content"> 
+                <div class="menu-card">
+                    <img class="card-image" src="pizza1.jpg">
+                    <div class="card-detail">
+                    <h4> Margherita <span>105kr</span></h4>
+                    <p class="searchitem">Tomato, buffalo mozzarella and basil.</p>
+                    <br><button class="cartbtn" data-id="1" data-name="product 1"  data-price="105">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pizza2.jpg">
+                    <div class="card-detail">
+                    <h4> Bolgonesis <span>115kr</span></h4>
+                    <p class="searchitem">Tomato, mozzarella, minced meat, fresh tomatoes, onions and olives.</p>
+                    <br><button class="cartbtn" data-id="2" data-name="product 2"  data-price="115">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pizza3.jpg">
+                    <div class="card-detail">
+                    <h4> Mille Fioro <span>119kr</span></h4>
+                    <p class="searchitem">Tomato, mozzarella, shrimp, Italian cooked ham and fresh mushrooms.</p>
+                    <br><button class="cartbtn" data-id="3" data-name="product 3"  data-price="119"> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pizza4.jpg">
+                    <div class="card-detail">
+                    <h4> Danila <span>115kr</span></h4>
+                    <p class="searchitem">Tomato, mozzarella, grilled peppers, leeks, feta cheese, pesto and arugula.</p>
+                    <button class="cartbtn" data-id="4" data-name="product 4"  data-price="115">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pizza5.jpg">
+                    <div class="card-detail">
+                    <h4>Oxfile Pizza <span>135kr</span></h4>
+                    <p class="searchitem">Tomato, mozzarella, beef fillet, red onion, fresh mushrooms, fresh tomatoes and béarnaise sauce.</p>
+                    <button class="cartbtn"  data-id="5" data-name="product 5"  data-price="135">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--Pasta dishes -->
+        <div class="searchcart">
+            <h2  class="foodcatheading"><span>PASTA</span></h2>
+            <div class="menu-content"> 
+                <div class="menu-card">
+                    <img class="card-image" src="pasta1.jpg">
+                    <div class="card-detail">
+                    <h4> Lasagne Al Forno  <span>125kr</span></h4>
+                    <p class="searchitem">Pasta with ground beef with mozzarella, tomato sauce and bechamel sauce.</p>
+                    <br><button class="cartbtn" data-id="6" data-name="product 6"  data-price="125">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pasta2.jpg">
+                    <div class="card-detail">
+                    <h4>Vegetable Pen<span>125kr</span></h4>
+                    <p class="searchitem">Pasta tube with chanterelle mushrooms, zucchini, sun-dried tomatoes, artichoke, garlic and tomato sauce.</p>
+                    <button class="cartbtn" data-id="7" data-name="product 7"  data-price="125">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pasta3.jpg">
+                    <div class="card-detail">
+                    <h4> Spaghetti Carbonara <span>129kr</span></h4>
+                    <p>Spaghetti with bacon egg yolk, onion, black pepper and cream.</p>
+                    <br><br><button class="cartbtn" data-id="8" data-name="product 8"  data-price="129">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pasta4.jpg">
+                    <div class="card-detail">
+                    <h4>Fettucine With Polo <span>139kr</span></h4>
+                    <p>Band pasta with grilled chicken breast, mushrooms and pesto.</p>
+                    <br><br><button class="cartbtn" data-id="9" data-name="product 9"  data-price="139">Add to Cart</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <!--Side dishes -->
+        <div class="searchcart">    
+            <h2 class="foodcatheading" ><span>SIDES</span></h2>
+            <div class="menu-content"> 
+                <div class="menu-card">
+                    <img class="card-image" src="frenchfries.jpg">
+                    <div class="card-detail">
+                    <h4> French Fries <span>85kr</span></h4>
+                    <p class="searchitem">Strips of deep-fried potato.</p>
+                    <br><button class="cartbtn" data-id="10" data-name="product 10"  data-price="85">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="chicken-caesar-salad.jpg">
+                    <div class="card-detail">
+                    <h4> Ceasr Sallad <span>105kr</span></h4>
+                    <p class="searchitem">Grilled chicken fillet & ceasar dressing.</p>
+                    <br><button class="cartbtn" data-id="11" data-name="product 11"  data-price="105">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="pancake.jpg">
+                    <div class="card-detail">
+                    <h4> PanCakes With Sylt <span>119kr</span></h4>
+                    <p class="searchitem">Homemade</p>
+                    <br><button class="cartbtn" data-id="12" data-name="product 12"  data-price="119">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Drinks Items -->
+        <div class="searchcart">
+            <h2 class="foodcatheading" ><span>DRINKS</span></h2>
+            <div class="menu-content"> 
+                <div class="menu-card">
+                    <img class="card-image" src="drinks.jpg">
+                    <div class="card-detail">
+                    <h4> Carbonated Drinks  <span>35kr</span></h4>
+                    <p class="searchitem">Pepsi/Zingo/Fanta/Sprite.</p>
+                    <br><button class="cartbtn"  data-id="13" data-name="product 13"  data-price="35">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="Milkshake.jpg">
+                    <div class="card-detail">
+                    <h4> MilkShake <span>55kr</span></h4>
+                    <p class="searchitem">Choclate/Vanila/Strawberry</p>
+                    <br><button class="cartbtn" data-id="14" data-name="product 14"  data-price="55">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img class="card-image" src="juices.jpg">
+                    <div class="card-detail">
+                    <h4> Juice <span>55kr</span></h4>
+                    <p class="searchitem">Orange/Kiwi/Apple</p>
+                    <br><button class="cartbtn" data-id="15" data-name="product 15"  data-price="55">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+             
+    </div>
+</body>
+</html>
