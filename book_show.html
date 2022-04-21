@@ -42,9 +42,9 @@
         <h1 style="color:goldenrod;">Book a show</h1>
         <span style="color: silver;">The show lasts for 60 minutes.</span>
       </header>
-<img src="./image/events/ad2.jpg"  >
-<h3 style="color: goldenrod;">MAGIC SHOW ON MIDSUMMER</h3>
-      <div class="container1" >        
+      <img src="./image/events/ad2.jpg">
+      <h3 style="color: goldenrod;">MAGIC SHOW ON MIDSUMMER</h3>
+      <div class="container1">
         <!---Creates a form for the User to book a ticket-->
         <form class="fClass">
           <!---Adds input fields for the customer to fill in First name, Last name, E-mail and Phone number -->
@@ -71,11 +71,11 @@
             <span class="input-group-text">Address Line 2: </span>
             <input type="text" class="form-control" placeholder="Address Line 2">
           </div>
-        </form>        
-        </div>
-      </div>      
+        </form>
+      </div>
+      </div>
     </center>
-<br>
+    <br>
     <center>
       <!--Creates a container-->
       <div class="container2">
@@ -92,38 +92,38 @@
             <tr>
               <td>Children 0-6:</td>
               <td>Free</td>
-              <td>                
-                  <!---Enables the user to select desired number of tickets -->
-                  <div id="spnr">
-                    <input type="text" class="spin-1" value="1" /><br><br>
-                  </div>                
+              <td>
+                <!---Enables the user to select desired number of tickets -->
+                <div id="spnr">
+                  <input type="text" class="spin-1" value="0" /><br><br>
+                </div>
               </td>
             </tr>
             <tr>
               <td>Children 7-15:</td>
               <td>100</td>
               <td>
-                  <div id="spnr">
-                    <input type="text" class="spin-1" value="1" /><br><br>
-                  </div>                
+                <div id="spnr">
+                  <input type="text" class="spin-1" value="0" id="children" /><br><br>
+                </div>
               </td>
             </tr>
             <tr>
               <td>Adults:</td>
               <td>250</td>
               <td>
-                  <div id="spnr3">
-                    <input type="text" class="spin-1" value="1" /><br><br>
-                  </div>                
+                <div id="spnr3">
+                  <input type="text" class="spin-1" value="0" id="adult" /><br><br>
+                </div>
               </td>
             </tr>
             <tr>
               <td>Pensioner:</td>
               <td>200</td>
               <td>
-                  <div id="spnr4">
-                    <input type="text" class="spin-1" value="1" />
-                  </div>                
+                <div id="spnr4">
+                  <input type="text" class="spin-1" value="0" id="pensioner" />
+                </div>
               </td>
             </tr>
           </tbody>
@@ -132,38 +132,6 @@
     </center>
 
 
-    <!-- CSS -->
-    <style type="text/css">
-      .spininput {}
-    </style>
-    <!-- Javascript -->
-    <script>
-      $(function () {
-        $(".spin-1").spinner({
-          min: 0,
-          max: 10
-        });
-
-      });  
-      $('#elementId').change(function(){
-          alert("changed");
-        });
-
-        previousVal = "";
-        function InputChangeListener()
-        {
-          if($('#elementId').val()
-            != previousVal)
-          {
-          previousVal  = $('#elementId').val();
-          $('#elementId').change();    
-          }
-        }
-
-        setInterval(InputChangeListener, 500);
-
-        $('#elementId').val(3);
-    </script>
 
     <!---Creates a Button that will show the amount to be paid and a button which finishes the order-->
 
@@ -185,8 +153,8 @@
     <!-- </div> -->
   </section>
   <center>
-    <p class="pay">Total amount to be paid: 550 cronas</p>
-    
+    <p class="pay">Total amount to be paid: <span id="payAmount" class="pay">0 Kr</span></p>
+
     <a href="payment.html" class="btn btn-danger">Proceed</a>
     <a href="index.html" class="btn btn-danger">Regret</a>
     <br><br>
@@ -233,3 +201,36 @@
 </body>
 
 </html>
+<!-- Javascript -->
+<script>
+  $(function () {
+    $(".spin-1").spinner({
+      min: 0,
+      max: 10
+    });
+
+  });
+  $(".spin-1").spinner({
+    change: function () {
+      calculateAmount();
+    }
+  });
+
+  $('#children').change(function () {
+    calculateAmount();
+  });
+  $('#adult').change(function () {
+    calculateAmount();
+  });
+  $('#pensioner').change(function () {
+    calculateAmount()
+  });
+
+  function calculateAmount() {
+    var childAmount = $('#children').val() * 100;
+    var adultAmount = $('#adult').val() * 250;
+    var pensionerAmount = $('#pensioner').val() * 200;
+    var total = eval(childAmount) + eval(adultAmount) + eval(pensionerAmount);
+    $('#payAmount').text(total+" kr" );
+  };
+</script>
