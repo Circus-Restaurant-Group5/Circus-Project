@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap--INCLUDE THIS IMPACT IN VIEW CART TOCHECK>-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <!--end of the icon-->        
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+        <!--css-->
+        <link rel="stylesheet" href="./css/main.css">
+        <!--JS-->
+        
+        <script src="./script/circus.js"></script>
+        <!--Css Style Sheet-->
+        <link rel ="stylesheet" type="text/css" href="css/style.css">
+        <!--Javascript File--->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <!--font awsome link--->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">         
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <style>
+            .shopping-cart {
+                display: inline-block;
+                /* background: url('/Circus-Project/image/GoldCart.png') no-repeat 0 0; */
+                width: 24px;
+                height: 24px;
+                margin: 0 10px 0 0;
+                color: white;
+                font-size: x-large;
+            }
+            .badge-notify{
+            background:red;
+            position:relative;
+            top: -40px;
+            left: 20px;
+            }            
+        </style>
+        
+        <title>Menu Order Page</title>
+    </head>
+    <body>
+        <section>
+            <!--nav-bar-->
+            <nav>
+                    <div class="topnav">
+                        <a class="logo"><img src="./image/logo img/circus2.jpg" alt="logo"></a>
+                        <a href="index.html">Home</a>
+                        <a style="color: red">Menu</a>
+                        <a href="book_show.html" >Book Now</a>
+                        <a class="right" href="contactus.html">Contact Us</a>
+                        <a href="index.html#us" class="right" >About Us</a>
+                    </div>
+            </nav>
+            <!--end of nav-bar-->
+            <section>  
+        
+        <!--Menu Page Start-->
+        <div class="foodmenu">
+            <div class="foodmenubanner">
+                <!--Page Banner Image-->
+                <img src="image/banner.jpg">
+                <!--Page Banner Text-->
+                <div class="promo">
+                    <h1 style="font-size: 50px;font-weight: 600;"><span>Grand Opening Discount</span><br>10% off</h1>
+                </div>
+            </div>            
+            <div style="float: right; cursor: pointer;">
+                <span class="glyphicon glyphicon-shopping-cart shopping-cart"><span class="badge badge-notify my-cart-badge"></span></span>      
+            </div>            
+            <!--Search Menu-->
+                <input type="search" id="searchMenu" class="searchMenu" placeholder="SearchMenu">
+                <!--Menu Header-->
+            <div class ="menuheader">
+                <a href ="#">Favorites</a>
+                <a href ="#">Bestseller</a>
+                <a href ="#">Promotion</a>
+                <a href ="#">All</a>
+            </div>
+            <!--Pizza dishes-->
+            <div id="searchcart">
+                <h2 class="foodcatheading"><span>PIZZA</span></h2> 
+                <div class="menu-content">                    
+                    <div class="menu-card">
+                        <!--First Pizza dish image-->
+                        <img class="card-image" src="image/pizza1.jpg">
+                        <!--First Pizza dish detail-->
+                        <div class="card-detail">
+                            <h4> Margherita Pizza <span>105kr</span></h4>
+                            <p class="searchitem">Tomato, buffalo mozzarella and basil.</p>
+                            <br>
+                            <br>
+                            <button class="cartbtn my-cart-btn" data-id="1" data-name="Margherita Pizza"  data-summary="summary 1" data-price="105" data-quantity="1" data-image="image/pizza1.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Second Pizza dish image-->
+                        <img class="card-image" src="image/pizza2.jpg">
+                        <!--Second Pizza dish detail-->
+                        <div class="card-detail">
+                            <h4> Bolgonesis Pizza<span>115kr</span></h4>
+                            <p class="searchitem">Tomato, mozzarella, minced meat, fresh tomatoes, onions and olives.</p>
+                            <br>
+                            <button class="cartbtn my-cart-btn" data-id="2" data-name="Bolgonesis Pizza"  data-summary="summary 2" data-price="115" data-quantity="1" data-image="image/pizza2.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Third Pizza dish image-->
+                        <img class="card-image" src="image/pizza3.jpg">
+                        <!--Third Pizza dish detail-->
+                        <div class="card-detail">
+                            <h4> Mille Fioro Pizza<span>119kr</span></h4>
+                        <p class="searchitem">Tomato, mozzarella, shrimp, Italian cooked ham and fresh mushrooms.</p>
+                        <br>
+                        <button class="cartbtn my-cart-btn" data-id="3" data-name="Mille Fioro Pizza"  data-summary="summary 3" data-price="119" data-quantity="1" data-image="image/pizza3.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Fourth Pizza dish image-->
+                        <img class="card-image" src="image/pizza4.jpg">
+                        <!--Fourth Pizza dish detail-->
+                        <div class="card-detail">
+                            <h4> Danila Pizza <span>115kr</span></h4>
+                            <p class="searchitem">Tomato, mozzarella, grilled peppers, leeks, feta cheese, pesto and arugula.</p>
+                            <br>
+                            <button class="cartbtn my-cart-btn" data-id="4" data-name="Danila Pizza"  data-summary="summary 4" data-price="115" data-quantity="1" data-image="image/pizza4.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Fifth Pizza dish image-->
+                        <img class="card-image" src="image/pizza5.jpg">
+                        <!--Fifth Pizza dish detail-->
+                        <div class="card-detail">
+                            <h4>Oxfile Pizza <span>135kr</span></h4>
+                            <p class="searchitem">Tomato, mozzarella, beef fillet, red onion, fresh mushrooms, fresh tomatoes and béarnaise
+                                sauce.</p>
+                            <button class="cartbtn my-cart-btn" data-id="5" data-name="Oxfile Pizza" data-summary="summary 5" data-price="135"
+                                data-quantity="1" data-image="image/pizza5.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Pasta dishes-->
+            <div id="searchcart">
+                <h2  class="foodcatheading"><span>PASTA</span></h2>
+                <div class="menu-content"> 
+                    <div class="menu-card">
+                        <!--First Pasta dish image-->
+                        <img class="card-image" src="image/pasta1.jpg">
+                        <!--First Pasta dish detail-->
+                        <div class="card-detail">
+                            <h4> Lasagne Al Forno Pasta <span>125kr</span></h4>
+                            <p class="searchitem">Pasta with ground beef with mozzarella, tomato sauce and bechamel sauce.</p>
+                            <br><button class="cartbtn my-cart-btn" data-id="6" data-name="Lasagne Al Forno Pasta" data-summary="summary 6"
+                                data-price="125" data-quantity="1" data-image="image/pasta1.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Second Pasta dish image-->
+                        <img class="card-image" src="image/pasta2.jpg">
+                        <!--Second Pasta dish detail-->
+                        <div class="card-detail">
+                            <h4>Vegetable Pen Pasta<span>125kr</span></h4>
+                        <p class="searchitem">Pasta tube with chanterelle mushrooms, zucchini, sun-dried tomatoes, artichoke, garlic and tomato sauce.</p>
+                        <br>
+                        <button class="cartbtn my-cart-btn" data-id="7" data-name="Vegetable Pen Pasta"  data-summary="summary 7" data-price="125" data-quantity="1" data-image="image/pasta2.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Third Pasta dish image-->
+                        <img class="card-image" src="image/pasta3.jpg">
+                        <!--Third Pasta dish detail-->
+                        <div class="card-detail">
+                            <h4> Spaghetti Carbonara Pasta <span>129kr</span></h4>
+                        <p>Spaghetti with bacon egg yolk, onion, black pepper and cream.</p>
+                        <br><br><button class="cartbtn my-cart-btn" data-id="8" data-name="Spaghetti Carbonara Pasta"  data-summary="summary 8" data-price="129" data-quantity="1" data-image="image/pasta3.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Fourth Pasta dish image-->
+                        <img class="card-image" src="image/pasta4.jpg">
+                        <!--Fourth Pasta dish detail-->
+                        <div class="card-detail">
+                            <h4>Fettucine With Polo Pasta <span>139kr</span></h4>
+                        <p>Band pasta with grilled chicken breast, mushrooms and pesto.</p>
+                        <br><br><button class="cartbtn my-cart-btn" data-id="9" data-name="Fettucine With Polo Pasta"  data-summary="summary 9" data-price="139" data-quantity="1" data-image="image/pasta4.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Side dishes-->
+            <div id="searchcart">    
+                <h2 class="foodcatheading" ><span>SIDES</span></h2>
+                <div class="menu-content"> 
+                    <div class="menu-card">
+                        <!--First Side dish image -->
+                        <img class="card-image" src="image/frenchfries.jpg">
+                        <!--First Side dish details -->
+                        <div class="card-detail">
+                        <h4> French Fries <span>85kr</span></h4>
+                        <p class="searchitem">Strips of deep-fried potato sides.</p>
+                        <br><button class="cartbtn my-cart-btn" data-id="10" data-name="French Fries"  data-summary="summary 10" data-price="85" data-quantity="1" data-image="image/frenchfries.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Second Side dish image -->
+                        <img class="card-image" src="image/chicken-caesar-salad.jpg">
+                        <!--Second Side dish details -->
+                        <div class="card-detail">
+                        <h4> Ceasr Sallad <span>105kr</span></h4>
+                        <p class="searchitem">Grilled chicken fillet & ceasar dressing sides.</p>
+                        <br><button class="cartbtn my-cart-btn" data-id="11" data-name="Ceasr Sallad"  data-summary="summary 11" data-price="105" data-quantity="1" data-image="image/chicken-caesar-salad.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Third Side dish image -->
+                        <img class="card-image" src="image/pancake.jpg">
+                        <!--Third Side dish detail -->
+                        <div class="card-detail">
+                        <h4> PanCakes With Sylt <span>119kr</span></h4>
+                        <p class="searchitem">Homemade sides</p>
+                        <br><button class="cartbtn my-cart-btn" data-id="12" data-name="PanCakes With Sylt"  data-summary="summary 12" data-price="119" data-quantity="1" data-image="image/pancake.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Drinks Items-->
+            <div id="searchcart">
+                <h2 class="foodcatheading" ><span>DRINKS</span></h2>
+                <div class="menu-content"> 
+                    <div class="menu-card">
+                        <!--First drink image-->
+                        <img class="card-image" src="image/drinks.jpg">
+                        <!--First drink detail-->
+                        <div class="card-detail">
+                            <h4>Carbonated Drinks<span>35kr</span></h4>
+                        <p class="searchitem">Pepsi/Zingo/Fanta/Sprite.</p>
+                        <br><button class="cartbtn my-cart-btn" data-id="13" data-name="Carbonated Drinks"  data-summary="summary 13" data-price="35" data-quantity="1" data-image="image/drinks.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Second drink image-->
+                        <img class="card-image" src="image/Milkshake.jpg">
+                        <!--Second drink detail-->
+                        <div class="card-detail">
+                            <h4>MilkShake<span>55kr</span></h4>
+                            <p class="searchitem">Choclate/Vanila/Strawberry drinks</p>
+                            <br><button class="cartbtn my-cart-btn" data-id="14" data-name="MilkShake"  data-summary="summary 14" data-price="55" data-quantity="1" data-image="image/Milkshake.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!--Third drink image-->
+                        <img class="card-image" src="image/juices.jpg">
+                        <!--Third drink detail-->
+                        <div class="card-detail">
+                            <h4> Juice <span>55kr</span></h4>
+                            <p class="searchitem">Orange/Kiwi/Apple drinks</p>
+                            <br><button class="cartbtn my-cart-btn" data-id="15" data-name="Juice"  data-summary="summary 15" data-price="55" data-quantity="1" data-image="image/juices.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+    <div class="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div  class="col-sm-4 col-md-3 item">
+                        <iframe width="200" height="190" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.9141500575238!2d18.060133915788494!3d59.33438711765942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6758ca91e7%3A0x698068969a7406b3!2sH%C3%B6torget%203%2C%20111%2057%20Stockholm!5e0!3m2!1sen!2sse!4v1650292250372!5m2!1sen!2sse" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Address</h3>
+                        <ul>
+                            <li>Stockholm - Hötorget B3- Circus restaurant</li>
+                            <li>Tel: +46764444444</li>
+                            <li>Email: circus@group5.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Open Hours</h3>
+                        <ul>
+                            <li>Mon-Fri 11:00-23:00</li>
+                            <li>Sat-Sun 11:00-2:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/?lang=en"><i class="icon ion-social-twitter"></i></a><a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/?hl=en"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Group5 © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+        <script src="script/jquery-2.2.3.min.js"></script>
+        <script type='text/javascript' src="script/bootstrap.min.js"></script>
+        <script type='text/javascript' src="script/jquery.mycart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script> 
+         <script src="script/flyto.js"></script> 
+        <script type="text/javascript">
+        $(function () {
+
+            var goToCartIcon = function ($addTocartBtn) {                
+                var $cartIcon = $(".shopping-cart");
+                var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+                $addTocartBtn.prepend($image);
+                $image.remove();                
+            }
+
+            $('.my-cart-btn').myCart({
+            currencySymbol: 'Kr.',
+            classCartIcon: 'shopping-cart',
+            classCartBadge: 'my-cart-badge',
+            classProductQuantity: 'my-product-quantity',
+            classProductRemove: 'my-product-remove',
+            classCheckoutCart: 'my-cart-checkout',
+            affixCartIcon: true,
+            showCheckoutModal: true,
+            numberOfDecimals: 2,
+            cartItems: [
+            //      {id: 1, name: 'product 1', summary: 'summary 1', price: 10, quantity: 1, image: 'http://img.tjskl.org.cn/pic/z2577d9d-200x200-1/pinarello_lungavita_2010_single_speed_bike.jpg'},
+            //      {id: 2, name: 'product 2', summary: 'summary 2', price: 20, quantity: 2, image: 'http://img.tjskl.org.cn/pic/z2577d9d-200x200-1/pinarello_lungavita_2010_single_speed_bike.jpg'},
+            //      {id: 3, name: 'product 3', summary: 'summary 3', price: 30, quantity: 1, image: 'http://img.tjskl.org.cn/pic/z2577d9d-200x200-1/pinarello_lungavita_2010_single_speed_bike.jpg'}
+            ],
+            clickOnAddToCart: function($addTocart){
+                goToCartIcon($addTocart);
+            },
+            afterAddOnCart: function(products, totalPrice, totalQuantity) {
+                console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+            },
+            clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+                console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+            },
+            checkoutCart: function(products, totalPrice, totalQuantity) {
+                var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+                checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+                $.each(products, function(){
+                checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+                });
+                alert(checkoutString)
+                console.log("checking out", products, totalPrice, totalQuantity);
+            },
+            getDiscountPrice: function(products, totalPrice, totalQuantity) {
+                console.log("calculating discount", products, totalPrice, totalQuantity);
+                return totalPrice * 0.10;
+            }
+            });
+          
+              
+        });
+        </script>
+    </body>
+</html>
