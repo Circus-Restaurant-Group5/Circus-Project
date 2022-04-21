@@ -1,0 +1,85 @@
+.body{
+    
+    background-color: silver;
+}
+
+.container-fluid{
+    background-color: goldenrod;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 0px; 
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+   }
+    
+    .fClass {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-right: 20px;
+          }
+      .input-group{
+        position: relative;
+        background-size: 80%;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        display:inline;
+        margin: 10 px 0px 12px 40px;
+        border-radius: 5px;
+        color:black;
+        text-align: center;
+        box-sizing:border-box;
+        
+      }
+      .container1{
+        background-color:silver;
+        display: inline-block;
+        padding-left: 50px;
+        padding-top: 50px;
+        width: 800px;
+        height: 300px;
+        margin: 0px; 
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+      }
+      .container2{
+        background-color: red;
+        display: inline-block;
+        padding-left: 50px;
+        padding-top: 50px;
+        width: 800px;
+        height: 400px;
+        margin: 0px; 
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+
+      }
+    .jumbotron.table{
+        display:block;
+        margin: 10px 0px 12px 40px;
+        width: 100px;
+        height: 50px;
+
+    }
+    
+    .jumbotron.buttons{
+            align-content: center;
+            background-color: silver;
+            color: black;
+        }
+
+        a.button {
+          border: 1px solid #CCC;
+          background: #EEE;
+          padding: 5px 10px;
+          border-radius: 5px;
+          color: goldenrod;
+        }
