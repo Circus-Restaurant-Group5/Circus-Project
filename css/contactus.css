@@ -9,7 +9,7 @@ body{
 }
 /*Side Panel Style*/
 #col{
-    background: red;
+    background: silver;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -17,7 +17,7 @@ body{
 /*Contact Info Style*/
 .contact-info{
     margin-top:10%;
-    color:goldenrod;
+    color:rgb(0, 0, 0);
 }
 /*Contact Info Image Style*/
 .contact-info img{
@@ -41,7 +41,7 @@ body{
 /*Button Style*/
 .contact-form button{
     background: red;
-    color: goldenrod;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     width: 25%;
 }
